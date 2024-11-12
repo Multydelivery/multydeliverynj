@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(to right, #ffb45f, #dbea0a); /* Example warm gradient colors */
+    color: #ffffff; /* Ensures text is readable over gradient */
+    font-family: Arial, sans-serif;
+}
+/* Navbar Logo */
+.navbar-logo {
+    color: aqua;
+    width: 40px; /* Ensures the logo is a good size on all screens */
+    height: auto;
+    border-radius: 50%; /* Optional: circular logo */
+}
+.navbar-logo a {
+    color: rgb(226, 226, 16);
+    text-decoration: none;
+}
+
+ul.navbar-nav li a {
+    font-family: 'Black Ops One', cursive;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('images/DALL·E 2024-11-09 14.00.17 - A vibrant hero background image for a food delivery website, featuring a variety of fresh and delicious foods such as pizza, burgers, and salads displ.webp'); /* Adjust to actual image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Service Cards Hover */
+.service-card {
+    transition: transform 0.3s ease-in-out;
+}
+.service-card:hover {
+    transform: translateY(-10px); /* Adds a subtle hover effect */
+}
+
+/* Contact Section Styling */
+.contact-section .form-control {
+    border-radius: 0.5rem;
+    box-shadow: none;
+}
+
+.contact-section .btn {
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .navbar-logo {
+        width: 30px;
+    }
+}
