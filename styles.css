@@ -21,6 +21,16 @@ ul.navbar-nav li a {
     font-weight: 300;
 }
 
+i {
+    padding: 10px;
+    color: #ffffff;
+}
+
+a {
+    padding: auto;
+    color: #f4f403;
+}
+
 /* Hero Section Styling */
 .hero {
     background-image: url('images/DALL·E 2024-11-09 14.00.17 - A vibrant hero background image for a food delivery website, featuring a variety of fresh and delicious foods such as pizza, burgers, and salads displ.webp'); /* Adjust to actual image path */
