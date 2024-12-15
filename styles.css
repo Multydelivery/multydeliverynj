@@ -36,12 +36,66 @@ a {
     height: 100vh; /* Full viewport height */
     overflow: hidden;
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    background-size: cover; /* Ensures the background covers the hero section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-size: cover; /* Ensure the background fully covers the hero section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     transition: background-image 1s ease-in-out; /* Smooth transition for sliding effect */
 }
+.hero .container {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+    color: black;
+    background-color: rgba(246, 246, 242, 0.8);
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.slider-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#phone-number {
+    color: black;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh; /* Adjust hero height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh; /* Further adjust hero height for very small screens */
+    }
+}
+
 
 /* For smaller screens */
 @media (max-width: 768px) {
