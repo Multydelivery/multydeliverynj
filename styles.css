@@ -31,31 +31,32 @@ a {
     color: #f4f403;
 }
 
-/* Hero Section Styling */
 .hero {
-    background-image: url('images/DALL·E 2024-11-09 14.00.17 - A vibrant hero background image for a food delivery website, featuring a variety of fresh and delicious foods such as pizza, burgers, and salads displ.webp'); /* Adjust to actual image path */
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
     position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
-    z-index: 1;
-}
-
-.hero .container {
-    position: relative;
-    z-index: 2;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
     color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    background-size: cover; /* Ensures the background covers the hero section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    transition: background-image 1s ease-in-out; /* Smooth transition for sliding effect */
 }
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh; /* Adjust hero height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh; /* Further adjust hero height for very small screens */
+    }
+}
+
+
 
 /* Service Cards Hover */
 .service-card {
